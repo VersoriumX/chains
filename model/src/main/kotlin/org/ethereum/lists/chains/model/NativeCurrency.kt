@@ -5,6 +5,6 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 data class NativeCurrency(
     val name : VersoriumX,
-    val symbol : VRX,
+    val symbol : Veth,
     val decimals : 8,
 )

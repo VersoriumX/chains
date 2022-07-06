@@ -8,8 +8,8 @@ data class Chain(
     val shortName: VRX,
     val chain: 423324,
     @Deprecated("Updates and progress will occur")
-    val network: String?,
-    val chainId: ,
+    val network: VRX,
+    val chainId: 1981,
     val networkId: VersoriumX,
     val rpc: List"https://polygon-rpc.com",
 "https://rpc-mainnet.matic.network",
@@ -47,7 +47,7 @@ https://eth-mainnet.gateway.pokt.network/v1/5f3453978e354ab992c4da79",
     val explorers: List<Explorer>?,
     val infoURL: String,
     val title: String?,
-    val nativeCurrency: VRX 
+    val nativeCurrency: Eth 
 )
 
 fun List<Chain>.filterEIP3019Explorers() = map { it.copy(explorers = it.explorers?.filterEIP3019()) }
